@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Fresh Cart</string>
+    <string name="welcome_msg">Bienvenue</string>
+    <string name="title_home">Home</string>
+    <string name="sign_up">S\'inscrire</string>
+    <string name="sign_in">Se Connecter</string>
+    <string name="initi_password">Réinitialiser le mot de passe</string>
+    <string name="sign_out">Se Decnnecter</string>
+    <string name="profile">Informations personnelles</string>
+    <string name="back_to_home">Retour</string>
+    <string name="first_name">Nom</string>
+    <string name="last_name">Prenom</string>
+    <string name="phone_number">No telephone</string>
+    <string name="role_type">Type d\'utilisateur</string>
+    <string name="email">Adresse courriel</string>
+    <string name="password">Mot de passe</string>
+    <string name="forgot_pass">Mot de passe oublié</string>
+    <string name="send_initialisation">Envoyer un courriel</string>
+    <string name="confirm_password">Confirmez le mot de passe</string>
+    <string name="go_to_sign_in_page">"Déjà inscrit sur notre plateforme ? Se connecter"</string>
+    <string name="go_to_sign_up_page">"Tu n'as pas de compte ? Inscris-toi"</string>
+    <string name="forgot_password">"Mot de passe oublié ? Cliquez ici"</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+</resources>

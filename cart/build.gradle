@@ -1,0 +1,48 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.4.2'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.fresh'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
+	implementation 'org.springframework.security:spring-security-crypto'
+	implementation 'mysql:mysql-connector-java:8.0.33'
+	runtimeOnly 'mysql:mysql-connector-java'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// Retrofit pour les requêtes HTTP
+	implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+	implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+
+// Kotlin Coroutines
+	implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+	implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+
+// OkHttp pour le logging (facultatif)
+	implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
